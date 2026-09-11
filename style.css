@@ -1,0 +1,282 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family:'Franklin Gothic Medium', sans-serif;
+    font-weight: 600;
+}
+
+#navbarNav {
+    font-size: small;
+}
+
+#searchBar {
+    font-size: small;
+}
+
+.nav-link.active { 
+    font-weight: 600;
+}
+
+.nav-item:hover {
+    font-weight: 700;
+}
+
+.dropdown-menu {
+    transition: 2s linear;
+    background-color: white;
+    border: none;
+    text-decoration-color: #fff;
+}
+
+.dropdown-item {
+    font-size: small;
+    transition: 2s linear;
+}
+
+.form-control {
+    border: none;
+}
+
+.nav-color{
+    background-color: #fff;
+}
+
+
+
+/* Hero Section */
+#prtext {
+    font-weight:800;
+}
+
+#prtext-ket {
+    padding-bottom: 80px;
+}
+
+#hero {
+    background: linear-gradient(180deg, burlywood , beige);
+}
+
+#accent {
+    opacity: 2;
+}
+
+/* Layanan Section */
+
+#layanan {
+    padding: 100px;
+    background: linear-gradient(beige, white);
+}
+
+
+h2 {
+    font-size: x-large;
+    font-weight: 600;
+    color: burlywood;
+}
+
+.sub-title {
+    font-size: #000;
+}
+
+.card-layanan {
+    width: 100%;
+    height: 330px;
+    border-radius: 5px;
+    background: #fff;
+    padding: 40px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in;
+    
+}
+
+.circle-icon {
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.card-layanan h3 {
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-layanan p {
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Hover card */
+.card-layanan:hover {
+    width: 100%;
+    height: 330px;
+    border-radius: 5px;
+    background: linear-gradient(rgb(100, 85, 25), burlywood);
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.card-layanan:hover .circle-icon{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.card-layanan:hover h3 {
+    font-size: 24px;
+    padding: 10px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-layanan:hover p {
+    font-size: 14px;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Location Map */
+#location {
+    padding: 100px;
+    background: linear-gradient(white, beige);
+}
+
+#location p{
+    padding-bottom: 20px;
+}
+
+iframe{
+    width: 80%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 150px;
+}
+
+/* Footer */
+footer{
+    position: relative;
+    width: 100%;
+    background: burlywood;
+    min-height: 100px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+footer .social_icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+footer .social_icon li {
+    list-style: none;
+    margin: 10px;
+}
+
+footer .social_icon li a {
+    color: #fff;
+    font-size: 1.8em;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+footer .social_icon li a:hover {
+    color: bisque;
+    font-size: 1.8em;
+    display: inline-block;
+    transition: 0.2s;
+    transform: translate(0, -5px);
+}
+
+.alamat_end {
+    color: #fff;
+    margin: 5px;
+    font-size: large;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #fff;
+    margin-top: 15px;
+    font-size: small;
+    text-decoration: none;
+}
+
+footer .wave {
+     position: absolute;
+     top: -100px;
+     left: 0;
+     width: 100%;
+     height: 100px;
+     background: url(img/wave.png);
+     background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave_01 4s linear infinite;
+}
+
+footer .wave#wave2 {
+    z-index: 1000;
+    opacity: 0.5;
+    bottom: 0;
+    animation: animateWave_02 4s linear infinite;
+}
+
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.75;
+    bottom: 0;
+    animation: animateWave_01 3s linear infinite;
+}
+
+footer .wave#wave4 {
+    z-index: 1000;
+    opacity: 0.25;
+    bottom: 0;
+    animation: animateWave_02 3s linear infinite;
+}
+
+@keyframes animateWave_01 {
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
